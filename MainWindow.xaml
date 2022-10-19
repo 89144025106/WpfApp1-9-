@@ -8,5 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         
+        <WrapPanel>
+            <Label x:Name="Dany" Content="ABCDEFGHIJKLMNOPQRSTUVWYZ"/>
+            <Label x:Name="Itog" Content="0" Height="30" Width="100"/>
+            <Button x:Name="Schet" Content="Счёт" Click="Schet_Click" Width="150" Height="50"/>
+            <Button Content="Win1" Click="Button_Click" Canvas.Left="67" Canvas.Top="10"></Button>
+            <Button Content="Win2" Click="Button_Click" Canvas.Left="67" Canvas.Top="10"></Button>
+          
+        </WrapPanel>
     </Grid>
 </Window>

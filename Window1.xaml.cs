@@ -10,39 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1_Пр9_ИСРПО_Гуляева
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
             InitializeComponent();
         }
 
-        private void Schet_Click(object sender, RoutedEventArgs e)
-        {
-            string a = Convert.ToString(Dany.Content);
-            int index = a.IndexOf("OP");
-            Itog.Content = Convert.ToString(index);
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 window1 = new Window1();
-            window1.Show();
-           
-
-
-
-
+            ListBoxItem lbi = (ListBoxItem)(phonesList.ItemContainerGenerator.ContainerFromIndex(1));
+            TextBlock.Text = lbi.Content.ToString();
         }
     }
-    }
-    
-
+}
